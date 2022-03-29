@@ -1,10 +1,23 @@
-/*	Лабораторная работа 1
-		Вариант 7		  */
 #include <iostream>
+#include "staticVar.h"
 using namespace std;
 
-static int mas[5] = { 12,8,34,123 };
+int main() {
+	A = A * ((B + C) % 6) + D++;
+	B /= 7;
+	C = (C - (A++ + B--)) / 3;
+	D = (B & 63) | (C & 15) >> 2;
 
+	cout << "A=" << A << endl << "B=" << B << endl;
+	cout.unsetf(ios::dec);
+	cout.setf(ios::oct);
+	cout << "C=" << C << endl << "D=" << D << endl;
+	return 0;
+}
+
+/* 
+static int mas[5] = { 12,8,34,123 };
+ 
 int main() {
 	mas[0] = mas[0] * ((mas[1] + mas[2]) % 6) + mas[3]++;
 	mas[1] /= 7;
@@ -17,3 +30,4 @@ int main() {
 	cout << "C=" << mas[2] << endl << "D=" << mas[3] << endl;
 	return 0;
 }
+*/
