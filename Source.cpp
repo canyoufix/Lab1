@@ -1,0 +1,19 @@
+/*	Лабораторная работа 1
+		Вариант 7		  */
+#include <iostream>
+using namespace std;
+
+static int mas[5] = { 12,8,34,123 };
+
+int main() {
+	mas[0] = mas[0] * ((mas[1] + mas[2]) % 6) + mas[3]++;
+	mas[1] /= 7;
+	mas[2] = (mas[2] - (mas[0]++ + mas[1]--)) / 3;
+	mas[3] = (mas[1] & 63) | (mas[2] & 15) >> 2;
+
+	cout << "A=" << mas[0] << endl << "B=" << mas[1] << endl;
+	cout.unsetf(ios::dec);
+	cout.setf(ios::oct);
+	cout << "C=" << mas[2] << endl << "D=" << mas[3] << endl;
+	return 0;
+}

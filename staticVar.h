@@ -1,0 +1,1 @@
+static int A = 12, B = 8, C = 34, D = 123;
